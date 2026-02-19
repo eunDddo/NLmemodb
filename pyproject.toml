@@ -1,0 +1,31 @@
+[project]
+name = "memodb"
+version = "0.1.0"
+description = "LangChain + ChromaDB 기반 메모 관리 챗봇"
+requires-python = ">=3.11"
+
+dependencies = [
+    "streamlit>=1.35.0",
+    "langchain>=0.2.0",
+    "langchain-openai>=0.1.0",
+    "langchain-community>=0.2.0",
+    "chromadb>=0.5.0",
+    "openai>=1.30.0",
+    "selenium>=4.21.0",
+    "tiktoken>=0.7.0",
+    "faiss-cpu>=1.8.0",
+    "onnxruntime>=1.16.0,<1.19.0",
+    "python-dotenv>=1.0.0",
+    "langchain-text-splitters>=0.2.0",   # 추가
+    "langchain-classic>=0.0.0",
+
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
